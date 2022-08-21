@@ -10,7 +10,7 @@ pipeline {
         stage('Docker buidling') {
             steps {
                 bat 'docker images -a'
-                bat 'cd C:\\Users\\DELL\\Documents\\jenkins\\azure-vote\\'
+                bat 'cd azure-vote'
                 bat 'docker images -a'
                 bat 'docker build -t jenkins-pipeline .'
                 bat 'docker images -a'
