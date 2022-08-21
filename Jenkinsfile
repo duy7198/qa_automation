@@ -10,7 +10,7 @@ pipeline {
         stage('Docker buidling') {
             steps {
                 bat 'docker images -a'
-                bat 'cd azure-vote-app && docker build -t azure-vote-app .'
+                bat 'cd azure-vote && docker build -t jenkins-pipeline .'
                 // bat 'docker images -a'
                 // bat 'docker build -t jenkins-pipeline .'
                 bat 'docker images -a'
