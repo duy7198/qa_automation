@@ -12,7 +12,7 @@ pipeline {
                 bat 'docker images -a'
                 bat 'cd azure-vote/'
                 bat 'docker images -a'
-                bat 'docker build . -f Dockerfile.txt -t jenkins-pipeline'
+                bat 'docker build . -f Dockerfile-for-app-service.txt -t jenkins-pipeline'
                 bat 'docker images -a'
                 bat 'cd ..'
             }
