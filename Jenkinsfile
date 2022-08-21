@@ -11,10 +11,7 @@ pipeline {
             steps {
                 bat 'docker images -a'
                 bat 'cd azure-vote && docker build -t jenkins-pipeline .'
-                // bat 'docker images -a'
-                // bat 'docker build -t jenkins-pipeline .'
-                bat 'docker images -a'
-                bat 'cd ..'
+                bat 'cd azure-vote && docker images -a'
             }
         }
     }   
