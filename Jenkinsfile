@@ -2,14 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Verify branch') {
             steps {
-                sh(script: 'echo Hello Duy')
-            }
-        }
-        stage('Good bye') {
-            steps {
-                echo 'Good bye World'
+                echo 'GIT_BRANCH is ${GIT_BRANCH}'
             }
         }
     }   
